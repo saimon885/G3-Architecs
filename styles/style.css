@@ -24,6 +24,14 @@
 .drk-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.txt-primary{
+    color: #FF900E;
+}
+/* section-titel */
+.section-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
 /* button-clr */
 .btn-primary{
     border: none;
@@ -37,6 +45,19 @@
     cursor: pointer;
 }
 
+/* tim-title */
+#Quicklist{
+    color: #727272; 
+    font-weight: bold;
+}
+#Features{
+    color: #FF900E;
+}
+/* main */
+main,footer{
+    max-width: 1440px;
+    margin: 0  auto;
+}
 /* header style */
 
 /* nav releated style */
@@ -64,32 +85,207 @@
 }
 /* banner-related style */
 .banner-all{
-    width: 850px;
+    width: 53.125rem;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
 
 }
-.banner-title{
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
 .banner-details{
     font-size:1rem ;
 }
 .banner-img{
-    width: 100%;
+    max-width: 100%;
 }
+/* tim content start */
+    .tim-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+.tim-contents{
+    margin-top: 85px;
+    margin-bottom: 130px;
+    align-items: center;
+}
+.tim-fitures{
+    width: 537px;
+    margin-left: 73px;
+}
+.tim-title{
+    font-size: 45px;
+    margin-bottom: 24px;
+
+}
+.tim-description{
+    font-size: 16px;
+    margin-bottom: 24px;
+}       
+/* features will enjoy  */
+.feture-desss, .section-title{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.feture-desss, .section-des{
+    width: 542px;
+    font-size: 18px;
+    margin-top: 0;
+}
+.awords{
+    margin-top: 100px;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+.awords>div{
+    text-align: center;
+    align-items: center;
+    width: 241px;
+    height: 241px;
+    border: 1px solid #FF900E;
+}
+.awords .we{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.we,img,h3,h5{
+    margin-bottom: 0px;
+}
+/* sponsor */
+.spon-img{
+    margin: 50px 0 150px 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 155px;
+}
+.spon-img img{
+    max-width: 150px;
+}
+
+.sponsor-all{
+    max-width: 542px;
+    height: 129px;
+    text-align: center;
+    margin: 180px auto 0 auto;
+}
+.sponsor-all, .sponsor-title{
+    font-size: 45px;
+
+}
+.sponsor-all, .section-des{
+    font-size: 16px;
+}
+/* footer */
+footer{
+    margin: 130px auto 216px auto;
+}
+footer .paragrah{
+    font-size: 20px;
+    max-width: 1440px;
+    margin-top: 10px;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #FFF4E7;
+}
+
+
 /* Responsive-design  */
 @media screen and (max-width:576px) {
-    .navbar, .nav-link{
+    .navbar,
+     .nav-link,
+    .tim-contents,
+    .awords{
         flex-direction: column;
     }
+
     .nav-link{
-        margin: 0;
+        margin: 20px;
         padding: 0;
         gap: 10px;
         justify-content: center;
     }
+    .tim-img{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+
+    .tim-fitures{
+        margin-left: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-all{
+        width: 100%;
+        text-align: center;
+        /* margin-left: 10px; */
+    }
+    .awords{
+        margin: 70px auto;
+        gap: 40px;
+    }
+    .feture-desss{
+
+        /* width: 400px; */
+        text-align: center;
+    }
+    .feture-desss, .section-des{
+        width: 100%;
+    }
+    .spon-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .spon-img{
+        gap: 50px;
+        margin: 40px auto;
+    }
+
+}
+
+/* medium size divice */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .tim-contents{
+        flex-direction: column;
+    }
+    .nav-link{
+        flex-wrap: wrap;
+    }
+    .tim-img{
+        /* width: 50%; */
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .tim-fitures{
+        text-align: center;
+        margin:50px auto;
+        width: 100%;
+        text-align: center;
+    }
+        .banner-all{
+        width: 100%;
+        text-align: center;
+        /* margin-left: 10px; */
+    }
+    .feture-desss{
+        text-align: center;
+        margin: -100px auto 0 auto;
+    }
+    .awords{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        margin-left: 100px;
+    }
+
+    .spon-img{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .spon-img{
+        gap: 35px;
+        margin: 40px auto;
+        margin-left: 35px;
+    }
+
+
+
 }
